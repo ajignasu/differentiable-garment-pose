@@ -12,6 +12,7 @@ In progress features:
 - currently only works for a single set of garment and pose. provide potential support for multiple garments and poses
 - fix the hyperparameter optimization script
 - repo cleanup and streamline generated output
+- build a docker container
 ---
 
 ## **Key Features**
