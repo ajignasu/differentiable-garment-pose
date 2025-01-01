@@ -1,6 +1,8 @@
 results/
 smpl/
+scripts/ipynb/
 
 *.pyc
+*ipynb
 *.blend
 *.blend1
