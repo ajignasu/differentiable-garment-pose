@@ -11,6 +11,7 @@ In progress features:
 - use a config file to set up the model
 - currently only works for a single set of garment and pose. provide potential support for multiple garments and poses
 - fix the hyperparameter optimization script
+- repo cleanup and streamline generated output
 ---
 
 ## **Key Features**
