@@ -1,3 +1,5 @@
+# conda activate pytorch3d
+
 import os
 import torch
 import torch.nn as nn

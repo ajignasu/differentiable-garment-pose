@@ -1,10 +1,12 @@
+# conda activate pytorch3d
+
 import os
 import optuna
 from dataclasses import dataclass
 from typing import Dict, Any
 import json
 from datetime import datetime
-from hyperopt import run_hyperparameter_tuning
+# from hyperopt import run_hyperparameter_tuning
 from models import TShirtPoseEstimator
 
 @dataclass
@@ -26,17 +28,18 @@ def main():
     config = Config()
 
     if args.mode == 'tune':
-        print("Starting hyperparameter tuning...")
-        study = run_hyperparameter_tuning(
-            base_config=config,
-            n_trials=args.n_trials,
-            study_name=args.study_name or f"study_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        )
+        pass
+        # print("Starting hyperparameter tuning...")
+        # study = run_hyperparameter_tuning(
+        #     base_config=config,
+        #     n_trials=args.n_trials,
+        #     study_name=args.study_name or f"study_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        # )
         
-        print("\nBest hyperparameters found:")
-        print(f"Best loss: {study.best_value:.4f}")
-        for key, value in study.best_params.items():
-            print(f"{key}: {value}")
+        # print("\nBest hyperparameters found:")
+        # print(f"Best loss: {study.best_value:.4f}")
+        # for key, value in study.best_params.items():
+        #     print(f"{key}: {value}")
     else:
         print("Running normal training with default parameters...")
         
